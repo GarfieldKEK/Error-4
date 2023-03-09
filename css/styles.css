@@ -1,135 +1,184 @@
-ul {
+.list {
   list-style: none;
 }
-a {
+.link {
   text-decoration: none;
+  
+}
+.address-color {
+  color: #434455;
+}
+:root {
+  --brand-color: #2e2f42
+}
+:root {
+  --white-color: #FFFFFF
+}
+:root {
+  --background-white: #F4F4FD
+}
+:root {
+  --txt-grey: #434455
 }
 body {
   font-family: "Roboto", sans-serif;
 }
 /* =========================Header====================== */
 .menu-item {
-  font-style: normal;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
-  color: #2e2f42;
+  color: var(--brand-color);
 }
 .logo {
   font-family: "Raleway";
-  font-style: normal;
   font-weight: 800;
   font-size: 18px;
-  line-height: 21px;
+  line-height: 1.17;
   display: flex;
   align-items: center;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: #2e2f42;
+  color: var(--brand-color);
 }
 .web {
   color: #4d5ae5;
 }
 .address-item {
   font-style: normal;
-  font-weight: 400;
   font-size: 16px;
-  line-height: 24px;
+  line-height: 1.5;
   letter-spacing: 0.02em;
-  color: #434455;
+  color: var(--txt-grey);
 }
 /* =========================/Header====================== */
 
 /* ===================== Main=================== */
 /* Title */
 .title {
-  font-style: normal;
   font-weight: 700;
   font-size: 56px;
-  line-height: 60px;
+  line-height: 1.07;
   text-align: center;
   letter-spacing: 0.02em;
-  /* color: #FFFFFF; */
+  color: var(--white-color);
+}
+.hero {
+  background: var(--brand-color)
 }
 .btn {
-  font-style: normal;
   font-weight: 500;
   font-size: 16px;
-  line-height: 24px;
+  line-height: 1.5px;
   display: flex;
   align-items: center;
-  letter-spacing: 0.04em;
-  color: #ffffff;
-  cursor: pointer;
+  text-align: center;
+  color: #4D5AE5;
+  background: var(--background-white);
+  width: 116px;
+height: 48px;
+cursor: pointer;
+
 }
+.btn:hover {
+  color: var(--white-color);
+  background: #404BBF;
+}
+
 /* /Title */
 /* Goals */
 .goals-item {
-  font-style: normal;
   font-weight: 500;
   font-size: 20px;
-  line-height: 24px;
+  line-height: 1.2px;
   /* identical to box height, or 120% */
-  color: #2e2f42;
+  color: var(--brand-color);
 }
 .goals-text {
-  font-style: normal;
-  font-weight: 400;
   font-size: 16px;
-  line-height: 24px;
+  line-height: 1.5;
   letter-spacing: 0.02em;
-  color: #434455;
+  color: var(--txt-grey);
 }
 /* /Goals */
 /* What are we doing */
 .tech-title {
-  font-style: normal;
   font-weight: 700;
   font-size: 36px;
-  line-height: 40px;
+  line-height: 1.11;
   text-align: center;
   letter-spacing: 0.02em;
   text-transform: capitalize;
-  color: #2e2f42;
+  color: var(--brand-color);
 }
 /* /What are we doing */
 /* Our Team */
+.team {
+  background: var(--background-white)
+}
 .team-title {
-  font-style: normal;
   font-weight: 700;
   font-size: 36px;
-  line-height: 40px;
+  line-height: 1.11;
   text-align: center;
   letter-spacing: 0.02em;
   text-transform: capitalize;
-  color: #2e2f42;
+  color: var(--brand-color);
 }
 .name {
-  font-style: normal;
   font-weight: 500;
   font-size: 20px;
-  line-height: 24px;
+  line-height: 1.2;
   text-align: center;
   letter-spacing: 0.02em;
-  color: #2e2f42;
+  color: var(--brand-color);
 }
 .prof {
-  font-style: normal;
-  font-weight: 400;
   font-size: 16px;
-  line-height: 24px;
+  line-height: 1.5;
   text-align: center;
   letter-spacing: 0.02em;
-  color: #434455;
+  color: var(--txt-grey);
 }
 /* /Our Team */
 /* =====================/Main=================== */
-===============================/* Footer */============================================
-.footer-text {
-  font-style: normal;
-  font-weight: 400;
+.studio {
+font-weight: 800;
+font-size: 18px;
+line-height: 1.17;
+display: flex;
+align-items: center;
+letter-spacing: 0.03em;
+text-transform: uppercase;
+color: var(--background-white) ;
+}
+
+.footer-txt {
   font-size: 16px;
-  line-height: 24px;
+  line-height: 1.5;
   letter-spacing: 0.02em;
-  color: #f4f4fd;
+  color: var(--background-white);
+   
+}
+
+.footer {
+  background: var(--brand-color);
+
+}
+
+
+/* Portfolio */
+.photo-dscr {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: var(--brand-color);
+   
+}
+.photo-txt {
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--txt-grey); 
 }
