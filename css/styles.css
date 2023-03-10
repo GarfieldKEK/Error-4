@@ -5,21 +5,23 @@
   text-decoration: none;
   
 }
+.link:hover, :focus {
+    background-color: var(--btn-blue);
+    color: var(--white-color);
+}
+.header-item-color {
+  color: var(--brand-color);
+}
+
+:root {  --brand-color: #2e2f42;
+--white-color: #FFFFFF;
+ --background-white: #F4F4FD;
+ --txt-grey: #434455;
+ --text-blue: #4d5ae5;
+  --btn-blue: #404BBF; }
+
 .address-color {
-  color: #434455;
-}
-:root {
-  --brand-color: #2e2f42
-}
-:root {
-  --white-color: #FFFFFF
-}
-:root {
-  --background-white: #F4F4FD
-}
-:root {
-  --txt-grey: #434455
-}
+  color: var(--txt-grey); }
 body {
   font-family: "Roboto", sans-serif;
 }
@@ -42,7 +44,7 @@ body {
   color: var(--brand-color);
 }
 .web {
-  color: #4d5ae5;
+  color: var(--text-blue);
 }
 .address-item {
   font-style: normal;
@@ -69,20 +71,39 @@ body {
 .btn {
   font-weight: 500;
   font-size: 16px;
-  line-height: 1.5px;
+  line-height: 1.5;
   display: flex;
   align-items: center;
   text-align: center;
-  color: #4D5AE5;
+  color: var(--text-blue);
   background: var(--background-white);
   width: 116px;
 height: 48px;
 cursor: pointer;
+font-family: inherit
+
 
 }
-.btn:hover {
+.btn:hover,             :focus {
   color: var(--white-color);
-  background: #404BBF;
+  background: var(--btn-blue);
+  font-family: inherit
+}
+.main-btn {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: var(--white-color);
+  background: var(--btn-blue);    
+  width: 169px;
+height: 56px;
+
+cursor: pointer;
+font-family: inherit
+
 }
 
 /* /Title */
@@ -90,7 +111,7 @@ cursor: pointer;
 .goals-item {
   font-weight: 500;
   font-size: 20px;
-  line-height: 1.2px;
+  line-height: 1.2;
   /* identical to box height, or 120% */
   color: var(--brand-color);
 }
