@@ -205,6 +205,7 @@ font-family: inherit
 height: 56px;
 font-family: inherit ;
 display: flex;
+border-bottom: 1px solid #E7E9FC;
 
 
 }
@@ -363,4 +364,17 @@ color: var(--background-white) ;
   justify-content: center;
   gap: 24px;
   padding-bottom: 120px ;
+}
+.gallary-list-item {
+  border: 1px solid #E7E9FC;
+  border-top: none;
+  padding-top: 32px ;
+  padding-bottom: 32px ;
+  padding-left: 16px;
+}
+.photo-dscr {
+  margin-bottom: 8px;
+}
+.list-li:nth-last-child(n+4) {
+  margin-bottom: 48px ;
 }
