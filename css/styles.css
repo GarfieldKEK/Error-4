@@ -55,17 +55,14 @@
   }
   .container {
     
-    width:  1470px ;
+    width:  1188px ;
     margin-left: auto;
     margin-right: auto;
     padding-left: 15px;
     padding-right: 15px;
 
   }
-  .section-container {
-    padding-bottom: 120px;
-    padding-top: 120px;
-  }
+
   
 
 .address-color {
@@ -89,16 +86,19 @@ body {
 }
 /* =========================Header====================== */
 .header {
-  padding-top: 24px ;
-  padding-bottom: 24px ;
+  border-bottom: 1px solid #E7E9FC;
 }
 .page-header {
   display: flex;
   align-items: center;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  
 }
 .nav {
   display: flex;
   align-items: center;
+  
 }
 .menu {
   display: flex;
@@ -125,9 +125,11 @@ margin-right: 76px;
 }
 .address {
   margin-left: auto;
+ display: flex;
+ align-content: baseline;
 }
 .address-item:not(:last-child) {
-  margin: 40px;
+  margin-right: 40px;
 }
 .logo {
   font-family: "Raleway";
@@ -165,10 +167,13 @@ margin-right: 76px;
   margin-bottom: 48px ;
 
 display: flex;
-justify-content: center;
+margin-left: auto;
+margin-right: auto;
 width: 496px;
-padding-left: 472px;
- padding-right: 472px;
+
+
+;
+
 }
 
 .hero {
@@ -176,7 +181,11 @@ padding-left: 472px;
   padding-top: 188px;
   padding-bottom: 188px;
 }
+/* .hero-container {
+  display: flex;
+  justify-content: center;
 
+} */
 .btn {
   font-weight: 500;
   font-size: 16px;
@@ -190,6 +199,9 @@ padding-left: 472px;
 height: 48px;
 font-family: inherit;
 justify-content: center;
+box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+border-radius: 4px;
+
 
 
 
@@ -214,6 +226,8 @@ height: 56px;
 font-family: inherit ;
 display: flex;
 border-bottom: 1px solid #E7E9FC;
+margin-right: auto;
+margin-left: auto;
 
 
 }
@@ -224,6 +238,10 @@ border-bottom: 1px solid #E7E9FC;
 
 /* /Title */
 /* Goals */
+.goals-section-container {
+  padding-top: 120px;
+  padding-bottom: 60px;
+}
 .goals-container {
   display: flex;
 
@@ -263,8 +281,12 @@ border-bottom: 1px solid #E7E9FC;
   color: var(--brand-color);
 }
 /* /What are we doing */
+.tech-container {
+  padding-bottom: 120px;
+  padding-top: 60px;
+}
 .tech-title {
-  margin: 72px ;
+  margin-bottom: 72px ;
 }
 .tech-img-list {
   display: flex;
@@ -273,6 +295,10 @@ border-bottom: 1px solid #E7E9FC;
   justify-content: center;
 }
 /* Our Team */
+.team-container {
+  padding-bottom: 120px;
+  padding-top: 120px;
+}
 .team-list {
   display: flex;
   text-align: center;
