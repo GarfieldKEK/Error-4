@@ -370,14 +370,16 @@ color: var(--background-white) ;
 }
 
 /* Potfolio */
+.gallary {
+  padding-top: 96px;
+}
 .btn-list {
   display: flex;
   text-align: center;
   align-items: center;
   justify-content: center;
   gap: 24px ;
-   margin: 60px;
-   padding-top: 96px;
+   margin-bottom: 60px;
 }
 .gallary-list {
   display: flex;
