@@ -18,7 +18,7 @@
 :root {  --brand-color: #2e2f42;
 --white-color: #FFFFFF;
  --background-white: #F4F4FD;
- --txt-grey: #434455;
+ --txt-grey: #4343434455;
  --text-blue: #4d5ae5;
   --btn-blue: #404BBF; }
   ul, ol {
@@ -37,7 +37,7 @@
   }
   button {
     font: inherit;
-    pad: o;
+   
     border: none;
     cursor: pointer;
   }
@@ -177,7 +177,11 @@ width: 496px;
 }
 
 .hero {
-  background: var(--brand-color) ;
+  max-width: 1440px;
+  background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url('../images/1hero-back.jpg') ;
+  background-repeat: no-repeat;
+ margin: 0 auto;
+ background-size: cover;
   padding-top: 188px;
   padding-bottom: 188px;
 }
@@ -201,7 +205,7 @@ font-family: inherit;
 justify-content: center;
 box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 border-radius: 4px;
-
+border: 1px solid #E7E9FC;
 
 
 
@@ -221,9 +225,10 @@ border-radius: 4px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 border-radius: 4px;
 
+
   
   color: var(--white-color);
-  background: var(--btn-blue);    
+  background: var(--text-blue);    
   width: 169px;
 height: 56px;
 font-family: inherit ;
@@ -234,6 +239,9 @@ margin-left: auto;
 
 
 }
+.main-btn:hover,      :focus {
+  background: var(--btn-blue);  
+}
 .main-btn-pose {
   display: flex;
   justify-content: center;
@@ -241,6 +249,29 @@ margin-left: auto;
 
 /* /Title */
 /* Goals */
+.svg-item{
+  margin-bottom: 8px;
+  width: 264px;
+  display: flex;
+  justify-content: center;
+  background: #F4F4FD;
+border-radius: 4px;
+}
+.svg-list-item {
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+.svg-list-item-diagram {
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+.svg-list-item-astronaut {
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+.svg-list {
+  display: flex;
+}
 .goals-section-container {
   padding-top: 120px;
   padding-bottom: 60px;
@@ -335,6 +366,7 @@ margin-left: auto;
   text-align: center;
   letter-spacing: 0.02em;
   color: var(--txt-grey);
+  margin-bottom: 8px;
 }
 .team-list-item {
   background: var(--white-color);
@@ -348,7 +380,79 @@ border-radius: 0px 0px 4px 4px;
   padding-top: 32px;
   padding-bottom: 32px;
 }
+.social-list {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+}
+
+
+.social-link {
+  width: 40px;
+  height: 40px;
+  background-color: #4D5AE5;
+  border-radius: 50%;
+display: flex;
+align-items: center;
+justify-content: center;
+fill: #F4F4FD ;
+ 
+}
+.social-link:hover, :focus {
+  background-color: #404BBF ;
+}
 /* /Our Team */
+/* Customers */
+.customer-titles {
+  
+  font-weight: 700;
+font-size: 36px;
+line-height: calc(40px / 36px);
+text-align: center;
+letter-spacing: 0.02em;
+text-transform: capitalize;
+color: var(--brand-color);
+margin-bottom: 72px;
+
+
+}
+
+.customer-container {
+  display: block;
+  text-align: center;
+  justify-content: center;
+}
+.customer-list {
+  display: flex;
+  justify-content: space-between;
+}
+.customer-list-item {
+
+width: 166px;
+}
+.customer-link {
+  padding-top: 23px ;
+  padding-bottom: 15px;
+  display: flex;
+  justify-content: center;
+  border: 1px solid #8E8F99;
+  border-radius: 4px;
+}
+
+.customer-link:hover, :focus     {
+
+  border-color: #404BBF;
+  
+}
+.customer-link:hover .customer-logo {
+  fill: #404BBF ;
+}
+.customer-link:focus .customer-logo{
+  fill: #404BBF
+}
+.customer-logo {
+  fill:  #8E8F99;;
+}
 /* =====================/Main=================== */
 .studio {
 font-weight: 800;
@@ -397,6 +501,47 @@ color: var(--background-white) ;
   color: var(--txt-grey); 
   
 }
+.footer-socials-title {
+  font-weight: 500;
+font-size: 16px;
+line-height: calc(25px / 16px);
+letter-spacing: 0.02em;
+color: var(--white-color);
+margin-bottom: 16px ;
+}
+.footer-container {
+  display: flex;
+}
+.footer-copy {
+  margin-right: 120px;
+}
+
+
+.footer-social-logo {
+  fill: #F4F4FD;
+  
+
+}
+
+.footer-social-list {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+}
+.footer-social-link{
+  background-color: rgb(255, 255, 255, 0.1);
+ border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.footer-social-link:hover, :focus      {
+  background: #31D0AA;
+}
+
 
 /* Potfolio */
 .gallary {
