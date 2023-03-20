@@ -5,12 +5,12 @@
   text-decoration: none;
   color: inherit;
   font-family: inherit;
-  transition: var(--animation-dur-and-cub);
+  transition: color var(--animation-dur-and-cub);
   
 }
 .link:hover, :focus {
-    background-color: var(--btn-blue);
-    color: var(--white-color);
+    color: var(--btn-blue);
+    
 }
 .header-item-color {
   color: var(--brand-color);
@@ -653,6 +653,10 @@ letter-spacing: 0.02em;
 color: #F4F4FD;
 width: 296px;
 }
+.overlay-box {
+  position: relative;
+  overflow: hidden;
+}
 .overlay {
   position: absolute;
   top: 0;
@@ -660,7 +664,7 @@ width: 296px;
   background-color: #4D5AE5;
   height: 300px;
   padding: 32px 40px;
-  transform: translateY(150%);
+  transform: translateY(100%);
   transition: transform var(--animation-dur-and-cub);
 }
 
