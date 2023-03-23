@@ -888,6 +888,7 @@ height: 40px;
 width:264px ;
     padding-left: 16px;
     transition: border var(--animation-dur-and-cub);
+    color: #FFFFFF;
   }
   .footer-form-input:focus {
     outline: hidden;
