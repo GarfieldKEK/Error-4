@@ -294,24 +294,16 @@ transition: background-color var(--animation-dur-and-cub);
 /* Goals */
 .svg-item{
   margin-bottom: 8px;
+  height: 112px;
   width: 264px;
   display: flex;
   justify-content: center;
   background: #F4F4FD;
 border-radius: 4px;
+align-items: center;
 }
-.svg-list-item {
-  padding-top: 24px;
-  padding-bottom: 24px;
-}
-.svg-list-item-diagram {
-  padding-top: 32px;
-  padding-bottom: 32px;
-}
-.svg-list-item-astronaut {
-  padding-top: 24px;
-  padding-bottom: 24px;
-}
+
+
 .svg-list {
   display: flex;
 }
