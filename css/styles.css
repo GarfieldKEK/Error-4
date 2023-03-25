@@ -126,6 +126,7 @@ body {
 .page-header {
   display: flex;
   align-items: center;
+  text-align: center;
   padding-top: 24px;
 padding-bottom: 24px  ;
 justify-content: space-between;
@@ -146,8 +147,7 @@ justify-content: space-between;
 }
 .burger {
   background-color: transparent;
-  width: 32px;
-  height: 22px;
+ 
 }
 
 .address-menu {
@@ -1013,11 +1013,17 @@ background-color: #404BBF;
   .footer-form {
     width: auto;
   }
+  .footer-tablet-container {
+    max-width: 551px;
+  
+   
+  }
+
   .footer-container {
     flex-direction: row;
     flex-wrap: wrap;
     align-items: baseline;
-    justify-content: center;
+    
     text-align: start;
   }
   .footer-copy {
@@ -1440,7 +1446,9 @@ box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.1
   opacity: 1;
  }
  .mobile-menu-social-list {
-  justify-content: space-between;
+  
+ justify-content: space-between
+  ;
  }
  .mobile-menu-item {
   font-weight: 700;
@@ -1466,7 +1474,7 @@ font-size: 36px;
 line-height: 40px;
 letter-spacing: 0.02em;
 text-transform: capitalize;
-color: #434455;
+color: #4D5AE5;
 margin-bottom: 40px;
  }
  .mobile-address-item-mail {
@@ -1478,9 +1486,3 @@ margin-bottom: 40px;
   color: #434455;
   margin-bottom: 48px;
  }
-.mobile-address-link:focus {
-  color: #4D5AE5;
- }
-.mobile-address-link:focus {
-  color: #4D5AE5;
-}
