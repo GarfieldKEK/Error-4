@@ -16,7 +16,7 @@
   <body>
     <header class="header">
       <div class="container page-header">
-      <!-- Upper Side -->
+     
       <nav class="nav">
         <a class="logo " href="./index.html"><span class="web">Web</span>Studio</a>
         <ul class="menu list ">
@@ -31,6 +31,13 @@
           <li class="address-item"><a class="link address-color" href="tel:+110001111111">+11 (000) 111-11-11</a></li>
         </ul>
       </address>
+      <button class="burger js-open-menu" type="button">
+        <svg viewBox="0 0 100 80" width="32" height="22">
+          <rect width="100" height="20"></rect>
+  <rect y="30" width="100" height="20"></rect>
+  <rect y="60" width="100" height="20"></rect>
+        </svg>
+      </button>
     </div>
     </header>
     <!-- Main content -->
@@ -108,16 +115,19 @@
       </div>
       </section>
       <!-- What are we doing -->
-      <section class="thech tech-container" >
+      <section class="tech tech-container" >
         <div class="container">
         <h2 class="tech-title">What are we doing</h2>
         <ul class="tech-img-list list">
-          <li><img src="./images/Rectangle71.jpg" alt="PC" width="360" /></li>
+          <li><img src="./images/Rectangle71.jpg" srcset="./images/Rectangle71.jpg 1x,
+            ./images/Rectangle71@2p.jpg 2x" alt="PC" width="360" /></li>
           <li>
-            <img src="./images/Rectangle71(1).jpg" alt="Socials" width="360" />
+            <img src="./images/Rectangle71(1).jpg" srcset="./images/Rectangle71(1).jpg 1x,
+            ./images/Rectangle71@2p(2).jpg 2x" alt="Socials" width="360" />
           </li>
           <li>
-            <img src="./images/Rectangle71(2).jpg" alt="Phone" width="360" />
+            <img src="./images/Rectangle71(2).jpg" srcset="./images/Rectangle71(2).jpg 1x,
+            ./images/Rectangle71@2p(3).jpg 2x" alt="Phone" width="360" />
           </li>
         </ul>
       </div>
@@ -128,7 +138,8 @@
         <h2 class="team-title">Our Team</h2>
         <ul class="list team-list">
           <li class="team-list-item">
-            <img src="./images/imgmark.jpg" alt="Mark Guerrero" width="264" />
+            <img src="./images/imgmark.jpg" srcset="./images/imgmark.jpg 1x,
+            ./images/imgmark@2p.jpg 2x" alt="Mark Guerrero" width="264" />
 
            <div class="team-prof"> <h3 class="name">Mark Guerrero</h3>
             <p class="prof">Product Designer</p>
@@ -165,7 +176,8 @@
           </li>
 
           <li class="team-list-item">
-            <img src="./images/imgtom.jpg" alt="Tom Ford" width="264" />
+            <img src="./images/imgtom.jpg" srcset="./images/imgtom.jpg 1x,
+            /images/imgtom@2p.jpg 2x" alt="Tom Ford" width="264" />
 
            <div class="team-prof"> <h3 class="name">Tom Ford</h3>
             <p class="prof">Frontend Developer</p>
@@ -202,7 +214,8 @@
           </li>
 
           <li class="team-list-item">
-            <img src="./images/imgcamila.jpg" alt="Camila Garcia" width="264" />
+            <img src="./images/imgcamila.jpg" srcset="./images/imgcamila.jpg 1x,
+            ./images/imgcamila2p.jpg 2x" alt="Camila Garcia" width="264" />
 
            <div class="team-prof"><h3 class="name">Camila Garcia</h3>
             <p class="prof">Marketing</p>
@@ -239,7 +252,8 @@
           </li>
 
           <li class="team-list-item">
-            <img src="./images/imgdaniel.jpg" alt="Daniel Wilson" width="264" />
+            <img src="./images/imgdaniel.jpg" srcset="./images/imgdaniel.jpg 1x,
+            ./images/imgdaniel@2p.jpg 2x" alt="Daniel Wilson" width="264" />
 
            <div class="team-prof"> <h3 class="name">Daniel Wilson</h3>
             <p class="prof">UI Designer</p>
@@ -277,7 +291,8 @@
         </ul>
       </div>
       </section>
-      <section class="team-container">
+      <!-- Customers -->
+     <section class="customers-section-container">
         <div class="container customer-container">
         <h2 class="customer-titles">Customers</h2>
         <ul class="customer-list">
@@ -366,7 +381,7 @@
         </ul>
       </div>
       <form class="footer-form">
-        <lable class="footer-form-lable">
+        <label class="footer-form-lable">
           <Span class="footer-form-title">Subscribe</Span>
          <div class="footer-form-content"> <input class="footer-form-input" type="email" placeholder="E-mail">
            
@@ -376,7 +391,7 @@
               <use href="./images/symbol2-defs.svg#icon-icon-send"></use>
             </svg>
           </button>
-        </lable> </div>
+        </label> </div>
       </form>
     </div>
       </footer>
@@ -425,7 +440,60 @@
         </form>
       </div>
       </div>
+     </div> 
+     <div class="mobile-menu js-menu-container">
+      <button class="modal-close-btn js-close-menu" type="button" >
+      
+        <svg width="8" height="8">
+          <use href="./images/close.svg#icon-close-black-18dp-2-1"></use>
+        </svg>
+      </button>
+      <ul class="mobile-menu-list ">
+        <li class="mobile-menu-item"><a class="link header-item-color mobile-menu-link" href="./index.html  ">Studio</a></li>
+        <li class="mobile-menu-item"><a class="link header-item-color mobile-menu-link" href="./portfolio.html">Portfolio</a></li>
+        <li class="mobile-menu-item"><a class="link header-item-color mobile-menu-link" href="">Contacts</a></li>
+      </ul>
+    </nav>
+    <address class="mobile-menu-address">
+      <ul class="list mobile-address-menu">
+        <li class="mobile-address-item-phone"><a class="mobile-address-link" href="tel:+110001111111">+11 (000) 111-11-11</a></li>
+        <li class="mobile-address-item-mail"><a class="mobile-address-link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+      </ul>
+      <ul class="social-list mobile-menu-social-list">
+        <li class="social-list-item">
+          <a class="social-link" href="">
+            <svg class="social-logo" width="24" height="24">
+              <use href="./images/symbol-defs.svg#icon-instagram-2"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="social-list-item">
+          <a class="social-link" href="">
+            <svg class="social-logo" width="24" height="24">
+              <use href="./images/symbol-defs.svg#icon-twitter-1"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="social-list-item">
+          <a class="social-link" href="">
+            <svg class="social-logo" width="24" height="24">
+              <use href="./images/symbol-defs.svg#icon-facebook-1"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="social-list-item">
+          <a class="social-link" href="">
+            <svg class="social-logo" width="24" height="24">
+              <use href="./images/symbol-defs.svg#icon-linkedin-1"></use>
+            </svg>
+          </a>
+        </li>
+      </ul> </div> 
+    </address>
+     
+     
      </div>
      <script src="./js/modal.js"></script>
+     <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
