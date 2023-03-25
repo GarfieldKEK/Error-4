@@ -1047,6 +1047,10 @@ background-color: #404BBF;
   }
 }
 @media screen and (min-width: 1200px) {
+  .footer-tablet-container {
+    max-width: 1140px;
+    flex-wrap: nowrap;
+  }
   .footer-form {
     width: auto;
   }
