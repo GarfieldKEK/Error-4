@@ -232,7 +232,7 @@ transition: visibility var(--animation-dur-and-cub);
 @media screen and (min-width:768px) {
   .page-header {
     max-width: 1199px;
-    height: auto;
+    height: 72px;
     width: 100%;
   }
   .address-item:not(:last-child) {
@@ -260,7 +260,7 @@ transition: visibility var(--animation-dur-and-cub);
 }
 @media screen and (min-width:1200px) {
   .page-header{
-    height: auto;
+    height: 72px;
     
   }
   .nav {
